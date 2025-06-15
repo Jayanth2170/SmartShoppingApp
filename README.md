@@ -75,9 +75,9 @@ To develop a mobile-based smart shopping system that:
 |-------------------------------|---------|
 | `mAP@[IoU=0.50]`              | 98.3%   |
 | `mAP@[IoU=0.50:0.95]`         | 71.6%   |
-| `Average Recall (medium)`     | 65.8%   |
+| `Average Recall (medium)`     | 75.8%   |
 | `Average Recall (large)`      | 77.1%   |
-| `F1 Scores`                   | > 0.6–0.7 across all classes |
+| `F1 Scores`                   | > 0.7-0.9 across all classes |
 
 
 
