@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="32dp"
+    android:background="#FFFFFF">
+
+    <!-- Register Heading -->
+    <TextView
+        android:id="@+id/registerTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign up "
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="#0000FF"
+        android:layout_marginTop="40dp"/>
+
+    <!-- Username Field -->
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:padding="16dp"
+        android:inputType="text"
+        android:layout_marginTop="30dp"/>
+
+    <!-- Password Field -->
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Create password"
+        android:padding="16dp"
+        android:inputType="textPassword"
+        android:layout_marginTop="20dp"/>
+
+    <!-- Confirm Password Field -->
+    <EditText
+        android:id="@+id/confirmPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Confirm password"
+        android:padding="16dp"
+        android:inputType="textPassword"
+        android:layout_marginTop="20dp"/>
+
+    <!-- Register Button -->
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:textColor="#000000"
+        android:background="#CCCCFF"
+        android:layout_marginTop="30dp"
+        android:padding="16dp"/>
+
+
+
+    <!-- Login Redirect -->
+    <TextView
+        android:id="@+id/loginRedirect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already have an account? Login"
+        android:textColor="#007BFF"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp" />
+</LinearLayout>

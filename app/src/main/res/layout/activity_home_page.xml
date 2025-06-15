@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <!-- Welcome Text -->
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Home Page!"
+        android:textSize="24sp"
+        android:textColor="@android:color/holo_blue_dark"
+        android:layout_marginBottom="80dp" />
+
+    <!-- Image 1 (Smaller and Centered) -->
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/img1"
+        android:layout_marginBottom="24dp"
+        android:scaleType="centerInside" />
+
+    <!-- Image 2 (Smaller and Centered) -->
+    <ImageView
+        android:id="@+id/image2"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/img2"
+        android:layout_marginBottom="32dp"
+        android:scaleType="centerInside" />
+
+    <!-- Scan Button -->
+    <Button
+        android:id="@+id/scanButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scan"
+        android:layout_gravity="center"
+        android:layout_marginTop="24dp" />
+
+    <!-- Logout Button -->
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:layout_marginTop="24dp"
+        android:padding="16dp" />
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <!-- Blue Header -->
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="#00B0FF"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/backButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/circle_background_white"
+            android:padding="10dp"
+            android:src="@android:drawable/ic_media_previous"
+            app:tint="#00B0FF" />
+
+        <TextView
+            android:id="@+id/welcomeText"
+            android:layout_width="238dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="80dp"
+            android:text="Smart Shopping"
+            android:textColor="#FFFFFF"
+            android:textSize="50sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/formLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:background="@drawable/rounded_top_white_bg">
+
+        <!-- Email Field -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/rounded_border"
+            android:padding="10dp"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="46dp"
+                android:src="@android:drawable/ic_dialog_email"
+                app:tint="#00B0FF" />
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:hint="Email or Username"
+                android:background="@android:color/transparent"
+                android:inputType="textEmailAddress"
+                android:paddingStart="10dp" />
+
+        </LinearLayout>
+
+        <!-- Password Field -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/rounded_border"
+            android:padding="10dp"
+            android:layout_marginBottom="24dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:src="@android:drawable/ic_lock_lock"
+                app:tint="#00B0FF" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:hint="Password"
+                android:background="@android:color/transparent"
+                android:inputType="textPassword"
+                android:paddingStart="10dp" />
+
+        </LinearLayout>
+
+        <!-- Sign In Button -->
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00B0FF"
+            android:text="Login"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <!-- Sign Up Prompt -->
+    <TextView
+        android:id="@+id/signUpTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don't have an account? Sign up"
+        android:textColor="#00B0FF"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp" />
+</RelativeLayout>
+
