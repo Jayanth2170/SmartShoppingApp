@@ -3,7 +3,8 @@
 Modern shopping should be fast, easy, and contactless. This project presents an AI-powered Smart Shopping Cart system that replaces manual barcode scanning with **real-time product detection** using deep learning. By using a smartphone camera and a trained YOLOv6 model, the system can detect items instantly and retrieve price and expiry details from a local database, streamlining the entire retail experience.
 
 
-## 🎯 Project Objective
+
+🎯 Project Objective
 
 To develop a mobile-based smart shopping system that:
 - Detects retail products in real time using a trained YOLOv6 model.
@@ -11,13 +12,15 @@ To develop a mobile-based smart shopping system that:
 - Allows users to manage their cart and checkout without barcodes or extra hardware.
 
 
-## 🧠 Core Technologies
+
+🧠 Core Technologies
 
 - YOLOv6 for real-time object detection
 - Roboflow for dataset creation and augmentation
 - ONNX for model conversion (YOLOv6 → mobile compatibility)
 - Android Studio with Java & Kotlin for mobile app development
 - SQLite for product info storage and retrieval
+
 
 
 🏗️ System Architecture
@@ -28,6 +31,7 @@ To develop a mobile-based smart shopping system that:
 3. Detected labels are matched to a local **SQLite** database.
 4. Product name, price, and expiry are displayed.
 5. User can add/remove items from cart and proceed to checkout.
+
 
 
 🧪 Model Training Overview
@@ -42,6 +46,7 @@ To develop a mobile-based smart shopping system that:
 - Small object detection remains a challenge; future training will improve that
 
 
+
 📱 App Features
 
 - **Login Page** (with future scope for secure auth)
@@ -49,6 +54,7 @@ To develop a mobile-based smart shopping system that:
 - **Cart Management** (add/remove/view items)
 - **Product Info** (name, price, expiry, calories, etc.)
 - **Offline database** powered by SQLite
+
 
 
 🧩 System Modules
